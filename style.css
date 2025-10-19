@@ -41,6 +41,12 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .profile-text {
     text-align: left;
 }
@@ -53,6 +59,35 @@ header h1 {
 header .subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* Main Content */
@@ -272,7 +307,7 @@ h2 {
     font-weight: bold;
     color: #667eea;
     font-size: 1.1rem;
-    min-width: 60px;
+    min-width: 90px;
 }
 
 .achievement-text {
@@ -318,6 +353,10 @@ footer p {
         gap: 20px;
     }
 
+    .profile-info {
+        align-items: center;
+    }
+
     .profile-text {
         text-align: center;
     }
@@ -325,6 +364,10 @@ footer p {
     .profile-image {
         width: 100px;
         height: 100px;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     header h1 {
